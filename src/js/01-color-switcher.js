@@ -4,20 +4,19 @@ const refs = {
 }
 
 refs.startBtn.addEventListener('click', start);
-refs.stopBtn.addEventListener('click',stopColor)
+refs.stopBtn.addEventListener('click', stopColor);
 
-
-let isActive = false;
 let intervalID = null;
-   function  start()  {
-                
+
+
+   function  start()  {                
          intervalID = setInterval(() => {
             const color = getRandomHexColor();
              document.body.style.backgroundColor = color;
-             refs.startBtn.setAttribute('disabled', true);
-          
-        }
-        ,1000)        
+             
+            }
+            ,1000)        
+            refs.startBtn.setAttribute('disabled', true);
 };
     
  function    stopColor() {
