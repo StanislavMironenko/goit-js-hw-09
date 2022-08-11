@@ -28,7 +28,7 @@ function createPromise(position, delay) {
 
 function inputValues(e) {
   values[e.target.name] = e.target.value;
-  console.log(values);
+ 
 }
 
 function onSubmitBtnClick(e) {
