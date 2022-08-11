@@ -39,7 +39,7 @@ function onSubmitBtnClick(e) {
 
 function start({ delay, step, amount }) {
   let position = 0;
-  for (i = 0; i < amount; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     position += 1;
     createPromise(position, delay)
       .then(resolve => {
